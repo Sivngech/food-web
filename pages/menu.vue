@@ -7,11 +7,11 @@
     </section>
 <div class="container mx-auto px-4">
     <section class="max-w-[1440px] h-full overflow-hidden">
-        <div class=" h-[74px] overflow-hidden text-[52px] text-3xl  mt-2 w-[243px]  md:w-auto  sm:w-auto z-20 inset-0 flex items-center justify-center  ">Our menu</div>
+        <div class=" h-[74px] overflow-hidden text-[52px]   mt-2 w-[243px] md:w-auto z-20 inset-0 md:flex items-center justify-center  ">Our menu</div>
       
 
         
-        <div class="md:flex-row flex-col md:w-auto justify-center gap-10">
+        <div class="flex md:flex-row flex-col flex-wrap  md:w-auto md:flex items-center justify-center gap-10">
             <div class="overflow-hidden relative">
                 <div class="h-[219px] w-[219px]   transform   justify-center">
                     <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-20 left-8 z-20"
@@ -95,7 +95,7 @@
 
      
 
- <div class="md:flex-row flex-col md:w-auto justify-center gap-10 ">
+ <div class="flex md:flex-row flex-col flex-wrap  md:w-auto  md:flex items-center justify-center gap-10 ">
             <div class="overflow-hidden relative">
                 <div class="h-[219px] w-[219px]   transform   justify-center">
                     <img class="absolute  h-[219px] w-[219px] object-cover top-20 left-8 z-20"
@@ -178,21 +178,21 @@
 
     </section>
 
-    <section class="h-[2870px] w-[1440px]">
-        <div class=" h-[74px] text-[52px] text-center">Build your own bowl</div>
+    <section class="h-full max-w-[1440px] mx-auto ">
+        <div class="text-3xl h-[74px] md:w-auto  text-center overflow-hidden md:flex items-center justify-center sm:w-auto mx-auto inset-0 z-20">Build your own bowl</div>
 
 
-        <section class="mt-20">
+        <section class="mt-20 overflow-hidden">
 
             <div class="flex gap-5">
-                <div> <img class="w-[32px]" src="public/images/Numero 1.png" alt=""></div>
+                <div> <img class="max-w-[32px]" src="public/images/Numero 1.png" alt=""></div>
                 <div>
                     <p class="text-[16px]" style="color:#565E6C;">Step1</p>
                     <h1 class="text-[24px] font-bold" style="color:#171A1F;">Choose a Base</h1>
                 </div>
             </div>
 
-            <div class="flex flex-row gap-20 mt-5">
+            <div class="flex md:flex-row flex-col gap-20 mt-5 md:flex items-center justify-center overflow-hidden md:overflow-hidden">
                 <div>
                     <img class="w-[206px]" src="public/images/rice1.png" alt="">
                     <p class="text-[18px] ml-14 mt-2">White Rice</p>
@@ -213,7 +213,7 @@
            
         </section>
 
-        <section class="mt-20">
+        <section class="mt-20 overflow-hidden">
              <div class="flex gap-5">
                 <div> <img class="w-[32px]" src="public/images/Numero 2.png" alt=""></div>
                 <div>
@@ -222,7 +222,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-row gap-20 mt-5">
+            <div class="flex md:flex-row flex-col gap-20 mt-5 md:flex items-center justify-center overflow-hidden md:overflow-hidden">
                 <div>
                     <img class="w-[206px]" src="public/images/p1.png" alt="">
                     <p class="text-[18px] ml-14 mt-2">Salmon</p>
@@ -241,7 +241,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-row gap-20 mt-15">
+            <div class="flex md:flex-row flex-col gap-20 mt-5 md:flex items-center justify-center overflow-hidden md:overflow-hidden">
                 <div>
                     <img class="w-[206px]" src="public/images/p5.png" alt="">
                     <p class="text-[18px] ml-14 mt-2">Chicken</p>
@@ -263,16 +263,16 @@
 
 
 
-        <section class="mt-20">
+        <section class="mt-20 overflow-hidden">
              <div class="flex gap-5">
-                <div> <img class="w-[32px]" src="public/images/Numero 3.png" alt=""></div>
+                <div> <img class="max-w-[32px]" src="public/images/Numero 3.png" alt=""></div>
                 <div>
                     <p class="text-[16px]" style="color:#565E6C;">Step3</p>
                     <h1 class="text-[24px] font-bold" style="color:#171A1F;">Choose Your Mix-Ins</h1>
                 </div>
             </div>
 
-            <div class="flex flex-row gap-20 mt-5">
+            <div class="flex md:flex-row flex-col gap-20 mt-5 md:flex items-center justify-center overflow-hidden md:overflow-hidden">
                 <div>
                     <img class="w-[206px]" src="public/images/p9.png" alt="">
                     <p class="text-[18px] ml-14 mt-2">Corn</p>
@@ -291,7 +291,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-row gap-20 mt-15">
+            <div class="flex md:flex-row flex-col gap-20 mt-5 md:flex items-center justify-center overflow-hidden md:overflow-hidden">
                 <div>
                     <img class="w-[206px]" src="public/images/p13.png" alt="">
                     <p class="text-[18px] ml-14 mt-2">Avocado</p>
@@ -325,7 +325,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-row gap-20 mt-5">
+            <div class="flex md:flex-row flex-col gap-20 mt-5 md:flex items-center justify-center overflow-hidden md:overflow-hidden">
                 <div>
                     <img class="w-[206px]" src="public/images/p17.png" alt="">
                     <p class="text-[18px] ml-14 mt-2">Ponzu Sauce</p>
@@ -353,15 +353,15 @@
     </section>
 
 
-    <section class="w-[1440px] h-[600px] justify-center mt-5 flex items-center">
-        <div class="flex gap-50">
-            <div class="w-[520px] ">
-                <h1 class="text-2xl">Our happy customer</h1><br>
-                <p>I'm a big fan of poke bowls, and this place definitely delivers. The quality of the ingredients is
+    <section class="max-w-[1440px] h-full justify-center mt-5">
+        <div class="flex flex-col md:flex-row  gap-10">
+            <div class="text-base md:text-sm/7 ">
+                <h1 class="text-xl sm:text-2xl md:text-4xl overflow-hidden">Our happy customer</h1><br>
+                <p class="mt-2 text-sm sm:text-base md:text-lg lg:text-xl md:w-auto overflow-hidden">I'm a big fan of poke bowls, and this place definitely delivers. The quality of the ingredients is
                     top-notch, and the variety of toppings allows you to customize your bowl.</p>
                 <br>
-                <h1 class="text-xl">Lauren Martinez</h1>
-                <div class="flex gap-5 overflow-hidden px-5 mt-65">
+                <h1 class="mt-4 text-xl sm:text-2xl md:text-4xl font-bold overflow-hidden">Lauren Martinez</h1>
+                <div class="flex gap-5 overflow-hidden px-5 mt-5">
                     <img class="inline-block size-12 rounded-full ring-2 ring-white" src="public/images/Rectangle.png"
                         alt="">
                     <img class="inline-block size-12 rounded-full ring-2 ring-white" src="public/images/Avatar 2.png"
@@ -375,8 +375,8 @@
                             src="public/images/right-sign.png" alt=""></button>
                 </div>
             </div>
-            <div class="w-[520px] px-5">
-                <img class="w-[520px]" src="public/images/rice.png" alt="">
+            <div class="w-full md:w-[520px] px-5">
+                <img class="w-full max-w-[520px]" src="public/images/rice.png" alt="">
             </div>
 
         </div>
@@ -385,17 +385,17 @@
 
     </section>
 
-    <section class="h-[374px] ml-5">
-        <div class="h-[314px] w-[1176px] flex bg-black text-white px-8 rounded">
+    <section class="h-full mx-auto px-4 md:px-10 py-10 max-w-[1440px]">
+        <div class="w-full flex flex-col md:flex-row bg-black text-white px-6 py-8 rounded-lg gap-6">
             <div>
-                <h1 class="text-[48px]">Find our locations</h1>
-                <p class="text-[18px] w-[568px]">Serving fresh fish daily at Boston Harbor Islands, Boylston St, Congress St, Kendall Square, Cambridge St, Haviland St.</p>
-                <button class="rounded-full text-white px-10 py-2 mt-5 text-left"
+                <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 overflow-hidden">Find our locations</h1>
+                <p class="text-sm sm:text-base md:text-lg lg:text-base max-w-xl text-left">Serving fresh fish daily at Boston Harbor Islands, Boylston St, Congress St, Kendall Square, Cambridge St, Haviland St.</p>
+                <button class="rounded-full text-white px-6 py-2 mt-5 sm:text-sm md:text-base"
                             style="background:#F96540;">Locations & Hours</button>
             </div>
-            <div class="flex gap-5">
-                <img class="mt-10" src="public/images/Image1.png" alt="">
-                <img class="w-[174px] h-[174px]" src="public/images/food3.png" alt="">
+            <div class="flex md:flex items-center justify-center gap-4 md:justify-start">
+                <img class="hidden md:block max-w-[200px] w-full h-auto" src="public/images/Image1.png" alt="">
+                <img class="w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] md:w-[174px] md:h-[174px]" src="public/images/food3.png" alt="">
             </div>
         </div>
     </section>

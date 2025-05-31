@@ -1,12 +1,12 @@
 <template>
     <section>
-        <div class="w-[1440px] h-[379px] overflow-hidden">
+        <div class="w-full h-[200px] md:h-[379px] overflow-hidden">
             <img src="public/images/resturant.png" alt="">
         </div>
     </section>
 
-    <section class="h-[210px] w-[1440px]">
-        <div class="flex gap-50 px-4 py-4">
+    <section class="w-full py-4 px-4">
+        <div class="flex flex-col lg:flex-row justify-between gap-6">
             <div>
                 <h1 class="text-[32px]">PokeBar Harbor Islands</h1>
                 <div class="flex gap-2 mt-2">
@@ -24,17 +24,9 @@
                 <div class="border-r-1" style="border-color: #FCDD80; color:#765903;"><button
                         class="px-2 py-2">Delivery</button></div>
                 <div style="color:#765903;"><button class="px-2 py-2">Pickup</button></div>
-
             </div>
-
-
         </div>
     </section>
-
-
-
-
-
     <section class="h-full w-[1440px] overflow-hidden">
 
         <h1 class="text-[24px] mb-20 h-[36px]">Menu</h1>
@@ -49,19 +41,14 @@
                         <div class="mt-16">
                             <h1 class="text-[18px] h-[28px]">Build Your Own Poke Bowl</h1>
                             <p class="w-[235px] text-[12px] h-[60px]">Extra proteins for an additional charge.</p>
-
                             <div class="flex gap-5">
                                 <h1 class="text-[18px]">$20</h1>
                                 <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"
                                     style="color:#F96540;">Add to cart</button>
                             </div>
-
-
                         </div>
-
                     </div>
                 </div>
-
                 <div class="overflow-hidden">
                     <div class=" w-[219px]  transform   justify-center">
                         <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-180 left-115"
@@ -79,11 +66,8 @@
                                     style="color:#F96540;">Add to cart</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-
                 <div class="overflow-hidden">
                     <div class="w-[219px]   transform  justify-center">
                         <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-180 left-185"
@@ -100,13 +84,9 @@
                                 <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"
                                     style="color:#F96540;">Add to cart</button>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
-
                 <div class="overflow-hidden">
                     <div class=" w-[219px]   transform   justify-center">
                         <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-180 left-265 "
@@ -122,9 +102,7 @@
                                 <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"
                                     style="color:#F96540;">Add to cart</button>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
 
@@ -143,16 +121,12 @@
                         <h1 class="text-[18px] h-[28px]">Dynamite Bowl</h1>
                         <p class="w-[235px] text-[12px] h-[60px]">Tuna* • Shrimp • Carrot • Mango • Jalapeno • Cucumber
                             • Chili Flakes • Sesame Seeds </p>
-
                         <div class="flex gap-5">
                             <h1 class="text-[18px]">$20</h1>
                             <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"
                                 style="color:#F96540;">Add to cart</button>
                         </div>
-
-
                     </div>
-
                 </div>
             </div>
 
@@ -173,7 +147,7 @@
                                 style="color:#F96540;">Add to cart</button>
 
                         </div>
-                        
+
                     </div>
 
                 </div>
@@ -299,7 +273,7 @@
                 <div class="w-[267px]  relative rounded shadow-md px-4 py-4  bg-white-300 ">
                     <div class="mt-16">
                         <h1 class="text-[18px] h-[28px] w-[235px]">Lemonade</h1>
-                      
+
                         <div class="flex gap-5">
                             <h1 class="text-[18px]">$2</h1>
                             <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"

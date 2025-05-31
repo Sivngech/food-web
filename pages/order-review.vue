@@ -1,57 +1,44 @@
 <template>
-    <section class="w-full h-full">
-        
-        <div class="flex gap-5 ">
-            <div class="bg-white shadow-md w-[796px] h-[228px]">
-                <h1 class="text-[16px] font-bold" style="color: #171A1F;">Order summary</h1>
+    <section class="w-full h-full flex-nowrap">
 
-                <table class=" w-[748px] mt-2 shadow" style="border-left: none; border-right: none;">
-                    <tr>
-                        <td>
-                            <img src="public/images/im1.png" alt="" class="w-[62px] p-2">
-                        </td>
-                        <td>
-                            <div class="w-[304px] ml-5">
-                                <p class="text-[16px]">Build Your Own Poke Bowl</p>
-                                <p class="text-[12px]" style="color: #565E6C;">Tuna* • Ground Spicy Tuna* • Avocado...
-                                </p>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="left-4 text-[16px]">$25</p>
-                        </td>
-                        <td><img class="left-4" src="public/images/pen.png" alt=""></td>
-                        <td><img src="public/images/trash.png" alt=""></td>
+        <div class="flex md:flex-row flex-col justify-center gap-5 p-4">
+  <div class="bg-white shadow-md max-w-[796px] w-full p-4">
+    <h1 class="text-[16px] font-bold text-[#171A1F]">Order summary</h1>
 
-                    </tr>
+    <!-- Order Item 1 -->
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-4 border-t border-b py-4">
+      <div class="flex items-start gap-4">
+        <img src="public/images/im1.png" alt="" class="w-[62px] p-2">
+        <div class="max-w-[304px]">
+          <p class="font-semibold">Build Your Own Poke Bowl</p>
+          <p class="text-sm text-[#565E6C]">Tuna* • Ground Spicy Tuna* • Avocado...</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <p class="text-[16px]">$25</p>
+        <img src="public/images/pen.png" alt="" class="w-5 h-5">
+        <img src="public/images/trash.png" alt="" class="w-5 h-5">
+      </div>
+    </div>
 
-                </table>
+    <!-- Order Item 2 -->
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-4 border-t border-b py-4">
+      <div class="flex items-start gap-4">
+        <img src="public/images/im2.png" alt="" class="w-[62px] p-2">
+        <div class="max-w-[304px]">
+          <p class="font-semibold">California Crunch Bowl</p>
+          <p class="text-sm text-[#565E6C]">Shrimp • Crab • Cucumber • Green Onion...</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <p class="text-[16px]">$9</p>
+        <img src="public/images/pen.png" alt="" class="w-5 h-5">
+        <img src="public/images/trash.png" alt="" class="w-5 h-5">
+      </div>
+    </div>
+  </div>
 
-
-                <table class="shadow mt-4 w-[748px]" style="border-right: none;border-left: none;">
-                    <tr>
-                        <td>
-                            <img src="public/images/im2.png" alt="" class="w-[62px] p-2">
-                        </td>
-                        <td>
-                            <div class="w-[304px] ml-5">
-                                <p class="text-[16px]">California Crunch Bowl</p>
-                                <p class="text-[12px]" style="color: #565E6C;">Shrimp • Crab • Cucumber • Green Onio....
-                                </p>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="left-4 text-[16px]">$9</p>
-                        </td>
-                        <td><img class="left-4" src="public/images/pen.png" alt=""></td>
-                        <td><img src="public/images/trash.png" alt=""></td>
-                    </tr>
-
-                </table>
-            </div>
-
-
-            <div class="w-[348px] shadow p-4">
+    <div class="max-w-[348px] shadow p-4">
                 <div>Payment method</div>
                 <a href="#">
                     <p style="color:#379AE6;">Change payment methods</p>
@@ -76,7 +63,7 @@
 
 
                 <div>
-                    <h1>Voucher</h1>
+                    <h1 class="font-semibold p-3">Voucher</h1>
 
                     <div class="flex gap-4">
                         <div class="border rounded" style="border-color: #9095A0;">
@@ -87,7 +74,7 @@
                         </div>
                     </div>
                     <div style="color: #765903;" class="bg-yellow-300 w-[60px] mt-2 rounded-full">
-                        <p>freeship</p>
+                        <p class="tracking-wide">freeship</p>
                     </div>
 
                     <div>Summary</div>
@@ -95,10 +82,10 @@
                     <table>
                         <tr>
                             <td>
-                                <p class="text-[12px]">Subtotal</p>
+                                <p class="font-semibold">Subtotal</p>
                             </td>
-                            <td>
-                                <p class="ml-50">$34</p>
+                            <td class="text-right">
+                                <p class=" text-sm">$34</p>
                             </td>
                         </tr>
                         <tr>
@@ -106,8 +93,8 @@
                                 <td>
                                     <p class="text-[12px]">Ship</p>
                                 </td>
-                                <td>
-                                    <p class="ml-50">$0</p>
+                                <td class="text-right">
+                                    <p class="text-sm">$0</p>
                                 </td>
                             </div>
                         </tr>
@@ -115,10 +102,10 @@
                         <tr>
                             <div>
                                 <td>
-                                    <p class="text-[12px]">Fee</p>
+                                    <p class="font-semibold">Fee</p>
                                 </td>
-                                <td>
-                                    <p class="ml-50">$0</p>
+                                <td class="text-right">
+                                    <p class="text-sm ">$0</p>
                                 </td>
                             </div>
                         </tr>
@@ -128,110 +115,89 @@
                         style="border-left: none;border-right: none; border-color:gray ; border-bottom: none;">
                         <tr>
                             <td>
-                                <p class="text-[12px]">Total</p>
+                                <p class="font-semibold">Total</p>
                             </td>
                             <td>
-                                <p class="ml-50 text-[18px]" style="color: #F96540;">$34</p>
+                                <p class=" text-sm" style="color: #F96540;">$34</p>
                             </td>
                         </tr>
                     </table>
 
                 </div>
 
-                <div class="rounded-full text-white text-center " style="background-color: #F96540;"> 
+                <div class="rounded-full text-white text-center " style="background-color: #F96540;">
                     <button class="px-2 py-2 ">Proceed to payment</button>
                 </div>
 
             </div>
 
         </div>
-        
 
-        <h1 class="text-[24px] mb-40">You might also like</h1>
- <div class="flex flex-row justify-center gap-10 mt-10">
-            <div class="overflow-hidden">
-                <div class=" w-[219px]   transform   justify-center">
-                    <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-130 left-37 z-10"
-                        src="public/images/dish1.png" alt="">
+
+        <h1 class="font-semibold mb-5 p-3">You might also like</h1>
+        <div class="flex md:flex-row flex-col flex-wrap  md:w-auto  md:flex items-center justify-center gap-10 ">
+            <div class="overflow-hidden relative">
+                <div class="h-[219px] w-[219px]   transform   justify-center">
+                    <img class="absolute  h-[219px] w-[219px] object-cover top-20 left-8 z-20"
+                        src="public/images/b1.png" alt="">
                 </div>
-                <div class=" w-[267px]  relative rounded shadow-md px-4 py-4 mb-40 shadow-gray-300 bg-white-300">
+                <div class=" w-[267px]  relative rounded shadow-md px-4 py-4 shadow-gray-300 bg-white-300">
                     <div class="mt-16">
-                        <h1 class="text-[18px] h-[28px]">Dynamite Bowl</h1>
-                        <p class="w-[235px] text-[12px] h-[60px]">Tuna* • Shrimp • Carrot • Mango • Jalapeno • Cucumber
-                            • Chili Flakes • Sesame Seeds </p>
+                        <h1 class="font-semibold h-[28px]">Dynamite Bowl</h1>
+                        <p class="w-[235px] text-[12px] h-[60px]">Tuna* • Shrimp • Carrot • Mango • Jalapeno • Cucumber • Chili Flakes • Sesame Seeds </p>
+                        <button class="rounded-full  text-white px-10 py-2  text-left mt-4 bg-gray-100"
+                            style="color:#F96540;">Order
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="overflow-hidden relative">
+                <div class="h-[219px] w-[219px]  transform   justify-center">
+                    <img class="absolute  h-[219px] w-[219px] object-cover top-20 left-8 z-20" src="public/images/b2.png" alt="">
+                </div>
+                <div class=" w-[267px]  relative rounded shadow-md px-4 py-4 shadow-gray-300 bg-white-300">
+                    <div class="mt-16">
+                        <h1 class="font-semibold h-[28px] w-[235px]">The Duke Bowl</h1>
+                        <p class="text-[12px] h-[60px]">Tuna* •  Salmon •  Shrimp • Seaweed • Salad • Jalapeno • Sweet Onion • Edamame • Cucumber</p>
+                        <button class="rounded-full text-white px-10 py-2  text-left mt-4 bg-gray-100"
+                            style="color:#F96540;">Order
+                            Now</button>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="flex gap-5">
-                            <h1 class="text-[18px]">$20</h1>
-                            <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"
-                                style="color:#F96540;">Add to cart</button>
-                        </div>
 
+            <div class="overflow-hidden relative">
+                <div class="h-[219px] w-[219px]   transform  justify-center">
+                    <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-20 left-8 z-20" src="public/images/b3.png"
+                        alt="">
+                </div>
+                <div class=" w-[267px]  relative rounded shadow-md px-4 py-4 shadow-gray-300 bg-white-300">
+                    <div class="mt-16">
+                        <h1 class="text-[18px] h-[28px] w-[235px]">Aloha Vegan Bowl</h1>
+                        <p class="text-[12px] h-[60px]">Tofu • Avocado • Carrot • Cabbage • Edamame • Watermelon Radish • Red Onion • Ginger</p>
+                        <button class="rounded-full text-white px-10 py-2  text-left mt-4 bg-gray-100"
+                            style="color:#F96540;">Order
+                            Now</button>
 
                     </div>
 
                 </div>
             </div>
 
-            <div class="overflow-hidden">
-                <div class=" w-[219px]  transform   justify-center">
-                    <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-130 left-115"
-                        src="public/images/dish2.png" alt="">
-                </div>
-                <div class=" w-[267px] shadow  relative rounded  px-4 py-4 mb-40 shadow-gray-300 bg-white-300">
-                    <div class="mt-16">
-                        <h1 class="text-[18px] h-[28px] w-[235px]">The Duke Bowl</h1>
-                        <p class="text-[12px] h-[60px]">Tuna* • Salmon • Shrimp • Seaweed • Salad • Jalapeno • Sweet
-                            Onion • Edamame • Cucumber</p>
-                        <div class="flex gap-5">
-                            <h1 class="text-[18px]">$16</h1>
-                            <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"
-                                style="color:#F96540;">Add to cart</button>
-
-                        </div>
-                        
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="overflow-hidden">
-                <div class="w-[219px]   transform  justify-center">
-                    <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-130 left-190"
-                        src="public/images/dish3.png" alt="">
-                </div>
-                <div class=" w-[267px]  relative rounded shadow-md px-4 py-4 mb-40 shadow-gray-300 bg-white-300">
-                    <div class="mt-16">
-                        <h1 class="text-[18px] h-[28px] w-[235px]">California Crunch Bowl</h1>
-                        <p class="text-[12px] h-[60px]">Shrimp • Crab • Cucumber • Green Onion • Carrot • Edamame •
-                            Avocado • Soy Sauce • Spicy Mayo Drizzle</p>
-                        <div class="flex gap-5">
-                            <h1 class="text-[18px]">$20</h1>
-                            <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"
-                                style="color:#F96540;">Add to cart</button>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="overflow-hidden">
-                <div class=" w-[219px]   transform   justify-center">
-                    <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-130 left-265 "
-                        src="public/images/dish4.png" alt="">
+            <div class="overflow-hidden relative">
+                <div class="h-[219px] w-[219px]   transform   justify-center">
+                    <img class="absolute mb-10 h-[219px] w-[219px] object-cover top-20 left-8 z-20 "
+                        src="public/images/b4.png" alt="">
                 </div>
                 <div class="w-[267px]  relative rounded shadow-md px-4 py-4  bg-white-300 ">
                     <div class="mt-16">
                         <h1 class="text-[18px] h-[28px] w-[235px]">Salmon Bowl</h1>
-                        <p class="text-[12px] h-[60px]">Spicy Salmon* • Green Onion • Avocado • Cucumber • House Sauce
-                            mixed with light sriracha • Lemon </p>
-                        <div class="flex gap-5">
-                            <h1 class="text-[18px]">$15</h1>
-                            <button class="rounded-full  text-white px-10 py-2  text-left  bg-gray-100"
-                                style="color:#F96540;">Add to cart</button>
-                        </div>
+                        <p class="text-[12px] h-[60px]">Spicy Salmon* • Green Onion • Avocado • Cucumber  • Ginger • House Sauce mixed with light sriracha • Furikake • Lemon </p>
+                        <button class="rounded-full text-white px-10 py-2  text-left mt-4 bg-gray-100"
+                            style="color:#F96540;">Order
+                            Now</button>
 
                     </div>
 
@@ -239,11 +205,6 @@
             </div>
 
         </div>
-
-
     </section>
-
-
-
 
 </template>

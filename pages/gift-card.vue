@@ -1,61 +1,62 @@
 <template>
+    <div class="container mx-auto px-4 py-8">
     <section>
-        <div class="flex gap-10">
-            <div>
-                <h1 class="text-[48px]">Give the Perfect Gift</h1>
-                <p>Get a voucher for yourself or gift one to a friend</p>
-                <p class="text-[20px] mt-5">What kind of gift is it?</p>
-                <div class="mt-2 flex gap-5">
-                    <div class="flex w-[280px] border rounded h-[102px] items-center gap-5"
+        <div class="flex flex-col-reverse lg:flex-row gap-10">
+            <div class="w-full lg:w-1/2">
+                <h1 class="text-3xl md:text-4xl font-bold mb-2 overflow-hidden">Give the Perfect Gift</h1>
+                <p class="text-base md:text-lg">Get a voucher for yourself or gift one to a friend</p>
+                <p class="text-xl mt-5 font-semibold">What kind of gift is it?</p>
+                <div class="mt-4 flex flex-col gap-5">
+                    <div class="flex items-center gap-4 p-4 border rounded max-w-full"
                         style="border-color: #F96540;color:#171A1F;">
-                        <img src="public/images/Gift-Icon.png" alt="" class="w-[36px] ml-4 mb-5">
-                        <div class="flex flex-col">
-                            <h1 class="text-[18px]">For one individual</h1>
-                            <p class="text-[12px] ">Send a gift card to one recipient</p>
+                        <img src="public/images/Gift-Icon.png" alt="" class="w-9">
+                        <div class="flex flex-col  ">
+                            <h1 class="text-lg font-semibold">For one individual</h1>
+                            <p class="text-sm">Send a gift card to one recipient</p>
                         </div>
                     </div>
-                    <div class="flex w-[280px] border rounded h-[102px] items-center gap-5"
+                    <div class="flex items-center gap-4 p-4 border rounded max-w-full"
                         style="border-color: #BCC1CA;color:#171A1F;">
-                        <img src="public/images/Diversity-Icon.png" alt="" class="w-[36px]  ml-4 mb-5">
+                        <img src="public/images/Diversity-Icon.png" alt="" class="w-9">
                         <div class="flex flex-col">
-                            <h1 class="text-[18px]">Group gift card</h1>
-                            <p class="text-[12px]">Pool money from multiple contributors for one recipient</p>
+                            <h1 class="text-lg font-semibold">Group gift card</h1>
+                            <p class="text-sm">Pool money from multiple contributors for one recipient</p>
                         </div>
                     </div>
                 </div>
 
-                <h1 class="text-[20px] w-[167px]">eGift card amount</h1>
-                <div class="border flex h-[36px] w-[396px] ml-2 gap-3 rounded" style="border-color: #FCDD80;">
-                    <div class="border-r-1 w-[78px]" style="border-color: #FCDD80;"><button class="mt-1">$25.00</button>
+                <h1 class="text-xl mt-6 font-semibold">eGift card amount</h1>
+                <div class="border rounded flex  flex-nowrap gap-2  p-1 max-w-[396px] mx-auto" style="border-color: #FCDD80;">
+                    <div class="border-r px-2 py-1 sm:text-xl" style="border-color: #FCDD80;"><button class="mt-1 sm:text-center sm:text-xl">$25.00</button>
                     </div>
-                    <div class="border-r-1 w-[78px]" style="border-color: #FCDD80;"><button class="mt-1">$35.00</button>
+                    <div class="border-r px-2 py-1 sm:text-xl" style="border-color: #FCDD80;"><button class="mt-1">$35.00</button>
                     </div>
-                    <div class="border-r-1 w-[78px]" style="border-color: #FCDD80;"><button class="mt-1">$50.00</button>
+                    <div class="border-r px-2 py-1 sm:text-xl" style="border-color: #FCDD80;"><button class="mt-1">$50.00</button>
                     </div>
-                    <div class="border-r-1 w-[78px] " style="border-color: #FCDD80;"><button
+                    <div class="border-r px-2 py-1 sm:text-xl " style="border-color: #FCDD80;"><button
                             class="mt-1">$100.00</button></div>
-                    <div><button class="w-[78px]  mt-1 mr-2">Custom</button></div>
+                    <div class=" px-2 py-1 sm:text-xl "><button class="mt-1" style="border-color: #FCDD80;">Custom</button></div>
                 </div>
-                <NuxtLink to="add-promote-code" style="color: #379AE6;">Add Promote Code</NuxtLink>
+                <NuxtLink class="block mt-3 text-blue-500">Add Promote Code</NuxtLink>
 
 
-                <h1 class="text-[20px]">Your details</h1>
+                <h1 class="text-xl mt-6 font-semibold">Your details</h1>
 
-                <div class="border border-gray-300 rounded w-[395px] p-1">
+                <div class="border border-gray-300 rounded w-full p-2 mt-2">
                     <input type="name" placeholder="Name">
                 </div>
-                <div class="border border-gray-300 rounded w-[395px] p-1 mt-4 mb-4">
+                <div class="border border-gray-300 rounded w-full p-2 mt-4">
                     <input type="email" placeholder="Your Email">
                 </div>
 
                 <textarea name="message" id="" placeholder="Your Message (optional)"
-                    class="w-[395px] h-[94px] border border-gray-300 rounded"></textarea>
+                    class="border border-gray-300 rounded w-full p-2 h-24 mt-4"></textarea>
 
-                <h1 class="text-[20px]">Delivery details</h1>
+                <h1 class="text-xl mt-6 font-semibold">Delivery details</h1>
 
-                <label class="inline-flex items-center cursor-pointer gap-10">
+                <label class="inline-flex items-center gap-4 mt-2">
                     <input type="checkbox" v-model="isOn" class="sr-only peer">
-                    <span class="ml-3 text-sm font-medium text-gray-900">{{ isOn ? 'Send this card to myself' : 'option' }}</span>
+                    <span class="text-sm text-gray-900">{{ isOn ? 'Send this card to myself' : 'option' }}</span>
                     <div
                         class="w-11 h-6 bg-gray-300 peer-checked:bg-green-500 rounded-full relative transition-all duration-300">
                         <div
@@ -65,8 +66,8 @@
                     
                 </label>
 
-                <div class="bg-orange-400 w-[396px] rounded-full text-white text-center mt-4">
-                    <button class="px-4 py-2">Checkout</button>
+                <div class="bg-orange-400 w-full rounded-full text-white text-center mt-6">
+                    <button class="px-6 py-2 w-full">Checkout</button>
                 </div>
 
             </div>
@@ -95,6 +96,7 @@
             </div>
         </div>
     </section>
+    </div>
 </template>
 <script setup>
 const isOn = ref(false)

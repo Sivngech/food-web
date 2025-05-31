@@ -1,24 +1,33 @@
 <template>
-    <section>
-        <div class="flex gap-10">
-            <div>
-                 <div class="flex gap-2 w-[187px] h-[44px] border rounded" style="border-color: #FCDD80;">
-                <div class="border-r-1" style="border-color: #FCDD80; color:#765903;"><button
-                        class="px-2 py-2">Delivery</button></div>
-                <div style="color:#765903;"><button class="px-2 py-2">Pickup</button></div>
-            </div>
-            <label for="find">
+    <section class="px-4 py-6">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+            <div class="flex flex-col items-center md:items-start w-full md:w-1/2 space-y-4">
+                 
+
+            <div class="flex gap-2 w-full max-w-xs h-[44px] border rounded border-[#FCDD80]">
+          <button class="px-4 py-2 w-1/2 text-[#765903] border-r border-[#FCDD80]">Delivery</button>
+          <button class="px-4 py-2 w-1/2 text-[#765903]">Pickup</button>
+        </div>
+
+            <label for="find" class="text-sm text-gray-600 text-center md:text-left">
                 Find nearby locations to order from
             </label>
-            <div class="flex w-[491px] gap-2 border rounded-full ">
-                <img src="public/images/Search-Icon.png" alt="" class=" w-[16px] px-2 py-2">
-                <input type="find" placeholder="Find a store near you" class="w-[132px]">
-            </div>
-            <img class="w-[492px] h-[563px]" src="public/images/Container.png" alt="">
+
+              <div class="flex items-center border border-gray-300 rounded w-full max-w-md p-2">
+          <img src="public/images/Search-Icon.png" alt="Search" class="w-4 h-4 mr-2" />
+          <input
+            type="text"
+            id="find"
+            placeholder="Find a store near you"
+            class="w-full outline-none text-base placeholder:text-sm"
+          />
+        </div>
+           
+            <img class="w-full max-w-md h-auto mt-4" src="public/images/Container.png" alt="">
             </div>
 
-            <div>
-                <img class="w-[552px] h-[736px]" src="public/images/Map.png" alt="">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img class="w-full max-w-lg h-auto mt-4 md:mt-0" src="public/images/Map.png" alt="">
             </div>
            
             
