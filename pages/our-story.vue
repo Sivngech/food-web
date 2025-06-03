@@ -1,4 +1,4 @@
-<template class="relative">
+<template>
     <section class="w-full mx-auto px-4 py-10 md:flex items-center justify-center">
         <div class="flex flex-col md:flex-row overflow-hidden  items-center justify-center">
             <div class="w-full h-[300px] md:h-[450px]">
@@ -23,14 +23,14 @@
             Now</button>
     </div>
 
-    <section class="max-w-[1440px] py-20 h-full bg-white mx-auto relative">
-        <div class="max-w-6xl mx-auto md:flex  lg:flex-row gap-10 relative z-10">
+    <section class=" py-20 h-full bg-white mx-auto relative ">
+        <div class="max-w-6xl mx-auto md:flex h-full  lg:flex-row gap-10 relative z-10 overflow-hidden mb-3">
 
 
-            <div class="flex-1 p-5 text-center lg:text-left overflow-hidden">
+            <div class="flex-1 px-5 py-20 text-center lg:text-left overflow-hidden h-full mx-auto">
                 <h1
-                    class="text-3xl md:text-lg lg:text-[48px] font-semibold mb-4 leading-tight max-w-xl overflow-hidden">
-                    Traditional Heritage, <br class="hidden md:block" />Modern Result
+                    class="md:flex text-2xl md:text-lg lg:text-[48px] font-semibold mb-4 leading-tight max-w-xl overflow-hidden">
+                    Traditional Heritage, <br/>Modern Result
                 </h1>
                 <p class="text-base md:text-lg text-gray-700 max-w-xl mx-auto lg:mx-0 font-semibold">
                     One of the reasons for poke's popularity is its versatility. While the traditional version
@@ -40,9 +40,9 @@
                     preferences.
                 </p>
             </div>
-            <div>
+            <div class="hidden md:block h-full mx-auto">
                 <img src="public/images/Oval 1.png"
-                    class="relative w-full max-w-[300px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[400px] z-0 left-0"
+                    class="relative w-full max-w-[300px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[400px] z-0 left-0 overflow-hidden"
                     alt="Oval background" />
             </div>
             <img src="public/images/f2.png"
@@ -50,14 +50,12 @@
                 alt="Main Bowl" />
 
         </div>
-        <img src="public/images/f3.png" class="absolute top-0 left-300 w-[80px] sm:w-[90px] md:w-[100px] z-20"
+        <img src="public/images/f3.png" class="absolute top-0 left-310 w-[80px] sm:w-[90px] md:w-[100px] z-20"
             alt="Leaf Decor" />
         <img src="public/images/f4.png"
-            class="absolute bottom-[-30px] left-300 w-[70px] sm:w-[80px] md:w-[90px] z-20" alt="Leaf Decor 2" />
+            class="absolute bottom-[-0px] left-310 w-[70px] sm:w-[80px] md:w-[90px] z-20" alt="Leaf Decor 2" />
 
     </section>
-
-
 
     <section class="h-full mx-auto px-4 md:px-10 py-10 max-w-[1440px] md:flex items-center justify-center">
         <div class="w-full flex flex-col md:flex-row bg-black text-white px-6 py-8 rounded-lg gap-6">
@@ -76,7 +74,6 @@
             </div>
         </div>
     </section>
-
 
     <section class=" max-w-[1440px] mx-auto px-4 py-10">
         <div class="flex lg:flex-row items-start gap-8">
@@ -114,14 +111,5 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
 
 </template>
