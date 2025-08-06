@@ -4,8 +4,6 @@
         <div class="flex md:flex-row flex-col justify-center gap-5 p-4">
   <div class="bg-white shadow-md max-w-[796px] w-full p-4">
     <h1 class="text-[16px] font-bold text-[#171A1F]">Order summary</h1>
-
-    <!-- Order Item 1 -->
     <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-4 border-t border-b py-4">
       <div class="flex items-start gap-4">
         <img src="public/images/im1.png" alt="" class="w-[62px] p-2">
@@ -20,8 +18,6 @@
         <img src="public/images/trash.png" alt="" class="w-5 h-5">
       </div>
     </div>
-
-    <!-- Order Item 2 -->
     <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-4 border-t border-b py-4">
       <div class="flex items-start gap-4">
         <img src="public/images/im2.png" alt="" class="w-[62px] p-2">
@@ -37,14 +33,11 @@
       </div>
     </div>
   </div>
-
     <div class="max-w-[348px] shadow p-4">
                 <div>Payment method</div>
                 <a href="#">
                     <p style="color:#379AE6;">Change payment methods</p>
                 </a>
-
-
                 <div class="border rounded px-2 py-2" style="border-color: #97DB32; background-color: #F5FCEB;">
                     <table class="p-2">
                         <tr>
@@ -60,8 +53,6 @@
                         </tr>
                     </table>
                 </div>
-
-
                 <div>
                     <h1 class="font-semibold p-3">Voucher</h1>
 
@@ -76,9 +67,7 @@
                     <div style="color: #765903;" class="bg-yellow-300 w-[60px] mt-2 rounded-full">
                         <p class="tracking-wide">freeship</p>
                     </div>
-
                     <div>Summary</div>
-
                     <table>
                         <tr>
                             <td>
@@ -206,5 +195,4 @@
 
         </div>
     </section>
-
 </template>

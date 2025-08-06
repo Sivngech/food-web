@@ -1,13 +1,14 @@
 <template>
     <section class="w-full mx-auto px-4 py-10 md:flex items-center justify-center">
         <div class="flex flex-col md:flex-row overflow-hidden  items-center justify-center">
-            <div class="w-full h-[300px] md:h-[450px]">
+            <div class="w-full h-[300px] md:h-[450px] relative">
                 <img class="h-full w-full object-cover" src="public/images/f1.png" alt="">
             </div>
 
         </div>
     </section>
-    <div class="bg-white rounded shadow p-6 max-w-xl w-full absolute h-auto md:top-80 md:left-100 z-50">
+    <div class="bg-white rounded shadow p-6 max-w-xl w-full h-auto z-50 
+            relative md:absolute md:top-80 md:left-[100px] xl:left-0">
         <h1 class="text-3xl md:text-lg text-center overflow-hidden">Our Story begins</h1>
         <p class="text-sm mb-4">At Poke Now, we believe fast food should be fresh food. From our
             premium ingredients to our exceptional service, eating healthy has never been easier—or more
@@ -40,21 +41,20 @@
                     preferences.
                 </p>
             </div>
-            <div class="hidden md:block h-full mx-auto">
+            <div class="hidden lg:block h-full mx-auto relative">
                 <img src="public/images/Oval 1.png"
                     class="relative w-full max-w-[300px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[400px] z-0 left-0 overflow-hidden"
                     alt="Oval background" />
             </div>
             <img src="public/images/f2.png"
-                class="absolute top-1/2 left-200 w-[200px] sm:w-[230px] md:w-[260px] transform -translate-x-1/2 -translate-y-1/2 z-10"
+                class="hidden lg:block absolute  top-1/2 left-200 w-[200px] sm:w-[230px] md:w-[260px] transform -translate-x-1/2 -translate-y-1/2 z-10"
                 alt="Main Bowl" />
 
         </div>
-        <img src="public/images/f3.png" class="absolute top-0 left-310 w-[80px] sm:w-[90px] md:w-[100px] z-20"
+        <img src="public/images/f3.png" class="hidden lg:block absolute top-0 left-310 w-[80px] sm:w-[90px] md:w-[100px] z-20"
             alt="Leaf Decor" />
         <img src="public/images/f4.png"
-            class="absolute bottom-[-0px] left-310 w-[70px] sm:w-[80px] md:w-[90px] z-20" alt="Leaf Decor 2" />
-
+            class="hidden lg:block absolute bottom-[-0px] left-310 w-[70px] sm:w-[80px] md:w-[90px] z-20" alt="Leaf Decor 2" />
     </section>
 
     <section class="h-full mx-auto px-4 md:px-10 py-10 max-w-[1440px] md:flex items-center justify-center">

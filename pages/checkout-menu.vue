@@ -4,7 +4,6 @@
       <img src="public/images/resturant.png" alt="" class="w-full h-full object-cover" />
     </div>
   </section>
-
   <section class="w-full py-4 px-4">
     <div class="flex flex-col lg:flex-row justify-between gap-6">
       <div>
@@ -30,9 +29,10 @@
   <section class="px-4">
     <h1 class="text-2xl mb-8">Menu</h1>
 
-    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-gray-50 p-4 relative">
-      <div v-for="(item, index) in menuItems" :key="index" class="relative min-h-64">
-        <img :src="item.image" alt="images" class="absolute w-[219px] h-[219px] top-0 inset-0 z-10 transform object-cover mx-auto"/>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-white p-4 relative">
+      <div v-for="(item, index) in menuItems" :key="index" class="relative min-h-64 s-dow">
+        <img :src="item.image" alt="images"
+          class="absolute w-[219px] h-[219px] top-0 mx-auto inset-0 z-10 transform object-cover" />
         <div class="mt-4 p-4 rounded-xl  bg-white min-h-64 justify-between">
           <h1 class="text-lg font-semibold mt-44">{{ item.name }}</h1>
           <p class="text-sm my-2">{{ item.description }}</p>
@@ -46,11 +46,12 @@
 
     <h1 class="text-2xl mt-12 mb-8">Drink</h1>
 
-    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-      <div v-for="(drink, index) in drinks" :key="index" class="relative">
-        <img :src="drink.image" alt="" class="w-[219px] h-[219px] object-cover mx-auto" />
-        <div class="mt-4 p-4 rounded shadow-md bg-white">
-          <h1 class="text-lg font-semibold">{{ drink.name }}</h1>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 relative p-3">
+      <div v-for="(drink, index) in drinks" :key="index" class="relative" style="
+box-shadow: 7px 7px 1px -5px rgba(0,0,0,0.18); border-radius: 5%;">
+        <img :src="drink.image" alt="" class="w-[219px] h-[219px] object-cover mx-auto absolute top-0 inset-0 z-10" />
+        <div class="mt-4 p-4 rounded shadow-gray-500 shadow-md bg-white">
+          <h1 class="text-lg font-semibold mt-44">{{ drink.name }}</h1>
           <div class="flex items-center justify-between mt-2">
             <span class="text-lg">${{ drink.price }}</span>
             <button class="rounded-full text-white px-4 py-1 bg-orange-500">Add to cart</button>
@@ -60,7 +61,6 @@
     </div>
   </section>
 </template>
-
 <script setup>
 const menuItems = [
   {
@@ -120,4 +120,9 @@ const drinks = [
   { name: 'Lemonade', price: 2, image: '/images/drink4.png' },
 ];
 </script>
-
+<style>
+.s-dow {
+  box-shadow: 7px 7px 1px -5px rgba(0, 0, 0, 0.18);
+  border-radius: 5%;
+}
+</style>

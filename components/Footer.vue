@@ -43,14 +43,8 @@
                         <img src="public/images/linkedin.png" alt="">
                         <img src="public/images/youtube.png" alt="">
                     </div>
-
-
-
                 </div>
-
             </div>
-
-
         </div>
     </footer>
 </template>
